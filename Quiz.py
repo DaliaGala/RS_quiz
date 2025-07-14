@@ -4,49 +4,49 @@ import streamlit as st
 if "questions" not in st.session_state:
     st.session_state.questions = [
     # Data Format: Raw vs Processed
-    {"question": "Parquet", "options": ["Raw", "Processed"], "answer": "Raw"},
-    {"question": "Relational Database", "options": ["Raw", "Processed"], "answer": "Raw"},
-    {"question": "TXT", "options": ["Raw", "Processed"], "answer": "Raw"},
-    {"question": "JSON", "options": ["Raw", "Processed"], "answer": "Raw"},
-    {"question": "CSV", "options": ["Raw", "Processed"], "answer": "Processed"},
-    {"question": "Excel", "options": ["Raw", "Processed"], "answer": "Processed"},
-    {"question": "Power BI Dashboard", "options": ["Raw", "Processed"], "answer": "Processed"},
+    {"question": "What data type is Parquet?", "options": ["Raw", "Processed"], "answer": "Raw"},
+    {"question": "What data type is a Relational Database?", "options": ["Raw", "Processed"], "answer": "Raw"},
+    {"question": "What data type is TXT?", "options": ["Raw", "Processed"], "answer": "Raw"},
+    {"question": "What data type is JSON?", "options": ["Raw", "Processed"], "answer": "Raw"},
+    {"question": "What data type is CSV?", "options": ["Raw", "Processed"], "answer": "Processed"},
+    {"question": "What data type is Excel?", "options": ["Raw", "Processed"], "answer": "Processed"},
+    {"question": "What data type is a Power BI Dashboard?", "options": ["Raw", "Processed"], "answer": "Processed"},
 
     # Data Type Identification
-    {"question": "\"2025-07-14\"", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Datetime"},
-    {"question": "\"Hello World\"", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "String"},
-    {"question": "42", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Integer"},
-    {"question": "3.14", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Float"},
-    {"question": "true", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Boolean"},
-    {"question": "[1, 2, 3]", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Array/List"},
+    {"question": "What data format is \"2025-07-14\"?", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Datetime"},
+    {"question": "What data format is \"Hello World\"?", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "String"},
+    {"question": "What data format is 42?", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Integer"},
+    {"question": "What data format is 3.14?", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Float"},
+    {"question": "What data format is true?", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Boolean"},
+    {"question": "What data format is [1, 2, 3]?", "options": ["String", "Integer", "Float", "Datetime", "Boolean", "Array/List"], "answer": "Array/List"},
 
     # Internal vs External Data Source
-    {"question": "A spreadsheet created by a colleague", "options": ["Internal", "External"], "answer": "Internal"},
-    {"question": "A program that collects office temperature daily", "options": ["Internal", "External"], "answer": "Internal"},
-    {"question": "A public website where users submit data", "options": ["Internal", "External"], "answer": "External"},
-    {"question": "A government open data portal", "options": ["Internal", "External"], "answer": "External"},
-    {"question": "A survey conducted by your team", "options": ["Internal", "External"], "answer": "Internal"},
+    {"question": "What kind of data source is a spreadsheet created by a colleague?", "options": ["Internal", "External"], "answer": "Internal"},
+    {"question": "What kind of data source is a program that collects office temperature daily?", "options": ["Internal", "External"], "answer": "Internal"},
+    {"question": "What kind of data source is a public website where users submit data?", "options": ["Internal", "External"], "answer": "External"},
+    {"question": "What kind of data source is a government open data portal?", "options": ["Internal", "External"], "answer": "External"},
+    {"question": "What kind of data source is a survey conducted by your team?", "options": ["Internal", "External"], "answer": "Internal"},
 
     # Internal vs External Data System
-    {"question": "Oracle HR", "options": ["Internal", "External"], "answer": "External"},
-    {"question": "Microsoft Suite", "options": ["Internal", "External"], "answer": "External"},
-    {"question": "SharePoint", "options": ["Internal", "External"], "answer": "External"},
-    {"question": "Teams", "options": ["Internal", "External"], "answer": "External"},
-    {"question": "A cloud app built by your IT team", "options": ["Internal", "External"], "answer": "Internal"},
-    {"question": "Power BI dashboard built by your colleagues", "options": ["Internal", "External"], "answer": "Internal"},
+    {"question": "Is Oracle HR an internal or external data system?", "options": ["Internal", "External"], "answer": "External"},
+    {"question": "Is Microsoft Suite an internal or external data system?", "options": ["Internal", "External"], "answer": "External"},
+    {"question": "Is SharePoint an internal or external data system?", "options": ["Internal", "External"], "answer": "External"},
+    {"question": "Is Teams an internal or external data system?", "options": ["Internal", "External"], "answer": "External"},
+    {"question": "Is a cloud app built by your IT team an internal or external data system?", "options": ["Internal", "External"], "answer": "Internal"},
+    {"question": "Is a Power BI dashboard built by your colleagues an internal or external data system?", "options": ["Internal", "External"], "answer": "Internal"},
 
     # Internal vs External Data Infrastructure
-    {"question": "A server hosted by your IT department", "options": ["Internal", "External"], "answer": "Internal"},
-    {"question": "A website and database hosted by contractors", "options": ["Internal", "External"], "answer": "External"},
-    {"question": "Cloud infrastructure leased and managed by your IT team", "options": ["Internal", "External"], "answer": "Internal"},
-    {"question": "Cloud infrastructure fully managed by NEC", "options": ["Internal", "External"], "answer": "External"},
+    {"question": "Is a server hosted by our IT department an internal or external data infrastructure?", "options": ["Internal", "External"], "answer": "Internal"},
+    {"question": "Is a website and database hosted by contractors an internal or external data infrastructure?", "options": ["Internal", "External"], "answer": "External"},
+    {"question": "Is cloud infrastructure leased and managed by our IT team an internal or external data infrastructure?", "options": ["Internal", "External"], "answer": "Internal"},
+    {"question": "Is cloud infrastructure fully managed by NEC an internal or external data infrastructure?", "options": ["Internal", "External"], "answer": "External"},
 
     # Is This File on the Cloud?
-    {"question": "Excel file on my laptop", "options": ["Yes", "No"], "answer": "No"},
-    {"question": "CSV file on a shared network drive", "options": ["Yes", "No"], "answer": "No"},
-    {"question": "File in SharePoint", "options": ["Yes", "No"], "answer": "Yes"},
-    {"question": "File in RSCloud", "options": ["Yes", "No"], "answer": "Yes"},
-    {"question": "SETS back-office files", "options": ["Yes", "No"], "answer": "Yes"}
+    {"question": "Is this file on the cloud: Excel file on my laptop?", "options": ["Yes", "No"], "answer": "No"},
+    {"question": "Is this file on the cloud: CSV file on a shared network drive?", "options": ["Yes", "No"], "answer": "No"},
+    {"question": "Is this file on the cloud: File in SharePoint?", "options": ["Yes", "No"], "answer": "Yes"},
+    {"question": "Is this file on the cloud: File in RSCloud?", "options": ["Yes", "No"], "answer": "Yes"},
+    {"question": "Is this file on the cloud: SETS back-office files?", "options": ["Yes", "No"], "answer": "Yes"}
 ]
 
 if "current_question" not in st.session_state:
