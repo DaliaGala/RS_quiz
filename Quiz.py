@@ -59,7 +59,7 @@ for section, questions in quiz.items():
     st.header(section)
     for question, correct_answer in questions:
         total += 1
-        user_answer = st.radio(
+        user_answer = st.selectbox(
             f"Q: {question}",
             options=["Raw", "Processed", "String", "Integer", "Float", "Datetime", "Boolean", "Array/List", "Internal", "External", "Yes", "No"],
             key=f"{section}-{question}"
