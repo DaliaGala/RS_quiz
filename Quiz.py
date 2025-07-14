@@ -110,7 +110,7 @@ def restart_quiz_fragment():
         st.rerun()
 
 # Main application
-st.title('Interactive Quiz App about Data In Revenue Scotland')
+st.title('Data In Revenue Scotland: An Interactive Quiz App')
 
 feedback_fragment()
 
