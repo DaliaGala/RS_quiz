@@ -6,21 +6,21 @@ if "questions" not in st.session_state:
     # Data Format: Raw vs Processed
     {"question": "What data type is a .CSV or an .XLSX file most often used for?", "options": ["Raw", "Processed"], "answer": "Processed"},
     {"question": "What type of data is stored in a Relational Database like that which forms the back-office of SETS?", "options": ["Raw", "Processed"], "answer": "Raw"},
-    {"question": "What data type is stored in these types of files: .PARQUET, .TXT, .JSON?, "options": ["Raw", "Processed"], "answer": "Raw"},
+    {"question": "What data type is stored in these types of files: .PARQUET, .TXT, .JSON?", "options": ["Raw", "Processed"], "answer": "Raw"},
     {"question": "What data type can a Power BI Dashboard be used for?", "options": ["Raw", "Processed"], "answer": "Processed"},
 
     # Data Type Identification
     {"question": "What data format is \"20250714T13:22-0500\"?", "options": ["String", "Integer", "Float", "Datetime"], "answer": "Datetime"},
     {"question": "What data format is \"Hello World\"?", "options": ["String", "Integer", "Float", "Datetime"], "answer": "String"},
-    {"question": "What data format is \"42?"\", "options": ["String", "Integer", "Float", "Datetime", "answer": "Integer"},
-    {"question": "What data format is \"3.14?"\", "options": ["String", "Integer", "Float", "Datetime"], "answer": "Float"},
+    {"question": "What data format is \"42\"?", "options": ["String", "Integer", "Float", "Datetime"], "answer": "Integer"},
+    {"question": "What data format is \"3.14\"?", "options": ["String", "Integer", "Float", "Datetime"], "answer": "Float"},
 
     # Internal vs External Data Source
     {"question": "To Revenue Scotland, what kind of a data source is SETS?", "options": ["Internal", "External"], "answer": "Internal"},
     {"question": "To Revenue Scotland, what kind of data system is SETS?", "options": ["Internal", "External"], "answer": "External"},
     {"question": "Is SETS hosted on an internal or external data infrastructure?", "options": ["Internal", "External"], "answer": "External"},
     {"question": "Is NEC's infrastructure internal or external?", "options": ["Internal", "External"], "answer": "External"},
-    {"question": "Are the SETS back-office files held in NEC Cloud?", "options": ["Yes", "No"], "answer": "Yes"}
+    {"question": "Are the SETS back-office files held in NEC Cloud?", "options": ["Yes", "No"], "answer": "Yes"},
 
     {"question": "Is Oracle Cloud HR an data source, system or infrastructure?", "options": ["Source", "System", "Infrastructure"], "answer": "System"},
     {"question": "Is Oracle Cloud HR an internal or external data system?", "options": ["Internal", "External"], "answer": "External"},
