@@ -58,11 +58,12 @@ total = 0
 for section, questions in quiz.items():
     st.header(section)
     for question, correct_answer in questions:
+        st.markdown(f"{question}, {correct_answer}")
         total += 1
         user_answer = st.selectbox(
             f"Q: {question}",
             options=["Raw", "Processed", "String", "Integer", "Float", "Datetime", "Boolean", "Array/List", "Internal", "External", "Yes", "No"],
-            key=f"{section}-{question}"
+             placeholder="Select answer..."
         )
         if user_answer == correct_answer:
             st.success("✅ Correct!")
